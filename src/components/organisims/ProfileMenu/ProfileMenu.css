@@ -1,0 +1,11 @@
+#menu-appbar{
+    margin-right: 0px;
+    background-color: rgba(24, 24, 24, 0.288);
+}
+#ProfileMenu{
+    background: red;
+}
+#ProfileMenu-Link{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,12 @@
+#profile-image{
+    height: 10vh;
+    width:10vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#secondary-button{
+    background: #005005;
+    color: rgb(255, 255, 255);
+    height: 7vh;
+}

@@ -1,0 +1,69 @@
+#registerAccount {
+  padding: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  color: rgb(29, 42, 156);
+}
+
+#centerDiv span {
+  padding: 5px;
+  border: 1px solid  rgba(34, 34, 34, 0.349);
+  border-radius: 100px;
+  font-size: 12px;
+}
+
+#horizontal {
+  height: 1px;
+  background-color: rgba(34, 34, 34, 0.349);
+  width: 100px;
+}
+#loginButton {
+  
+  background: rgba(24, 124, 11, 0.733);
+  box-shadow: 0px 0px 0px 0px;
+  flex: 1;
+  border-radius: 50px;
+}
+
+
+#loginButton:active {
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,.3);
+  
+}
+
+#loginButtonContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+
+#forgotPassDiv{
+  flex:1;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+  color: rgb(29, 42, 156);
+  
+  
+}
+
+#forgotPassDiv a{
+
+  text-decoration: none;
+  color: rgb(29, 42, 156);
+    
+}
+
+@media (max-width: 590px) {
+  #loginButton {
+    
+    border-radius: 100px;
+    height: 60px;
+
+  }
+
+  #loginFooter{
+    display: block;
+  }
+}

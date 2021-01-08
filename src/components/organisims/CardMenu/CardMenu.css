@@ -1,0 +1,95 @@
+#paper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+  margin-bottom: 0px;
+  text-align: center;
+  transition: .3s;
+}
+
+#toggleBtn:hover{
+  background:  #2e7d32;
+  color: white;
+}
+
+#paper span {
+  text-align: center;
+}
+
+#paper:hover #paper-image{
+  border: 1px solid white;
+
+}
+
+#paper:hover img {
+  height: 10vh;
+  width: 10vh;
+}
+#paper-image {
+  border: 1px solid rgba(24, 24, 24, 0.1);
+  /* background: red; */
+  padding: 10px;
+  border-radius: 100px;
+  width: 11vh;
+  height: 11vh;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#paper-image img {
+  height: 6vh;
+  width: 6vh;
+  transition: 0.3s;
+}
+
+#toggleBtn {
+  border: 0px solid transparent;
+  color: black;
+}
+
+#cardMenuLink {
+  text-decoration: none;
+}
+
+
+@media (max-width: 599px) {
+    #paper {
+      /* min-width: 100%; */
+    }
+  
+    #paper-image {
+      border: 1px solid rgba(24, 24, 24, 0.1);
+      /* background: red; */
+      padding: 10px;
+      border-radius: 100px;
+      width: 7vh;
+      height: 7vh;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #paper-image img {
+      height: 5vh;
+      width: 5vh;
+    }
+  
+    #paper:hover img {
+      height: 6vh;
+      width: 6vh;
+    }
+  }
+
+@media (max-width: 790px) {
+  #paper {
+    /* min-width: 100%; */
+  }
+
+
+
+ 
+}

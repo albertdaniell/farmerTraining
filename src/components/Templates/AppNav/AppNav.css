@@ -1,0 +1,51 @@
+.appBartitle {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+#appBartitle a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#appBar {
+  background: #2e7d32;
+  padding: 0px;
+  z-index: 1000;
+}
+
+#toolbar {
+  min-height: 12vh;
+}
+
+.root {
+  flex-grow: 1;
+}
+
+#appNavMenuIcon {
+  display: none;
+}
+
+#appBartitle {
+  margin-left: 12px;
+
+  align-self: auto;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 599px) {
+  #appNavMenuIcon {
+    display: block;
+  }
+  #appBartitle {
+    margin-left: 0px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+  }
+
+  #toolbar {
+    min-height: 11vh;
+  }
+}

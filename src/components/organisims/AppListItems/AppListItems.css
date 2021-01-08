@@ -1,0 +1,15 @@
+#listItem{
+    padding-left: 0px;
+    padding-bottom: 10px;
+
+}
+
+#listImg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+#listItem:hover{
+    background:  #2e7d3275;
+    color: rgb(17, 17, 17);
+}

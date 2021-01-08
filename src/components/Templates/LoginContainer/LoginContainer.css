@@ -1,0 +1,106 @@
+#loginContainer {
+  
+}
+
+#loginScreen {
+  height: 100vh;
+  display: flex;
+/* background: yellow; */
+/* position: fixed; */
+  flex-direction: column;
+  float: right;
+  overflow: auto;
+  width: 100%;
+ 
+}
+
+#loginForm {
+ 
+  padding: 45px;
+  /* background: red; */
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  
+  
+}
+
+#loginForm #textFieldGrid {
+  margin-bottom: 20px;
+  
+}
+
+#loginRightSide {
+    /* background-color: black; */
+  
+}
+
+#centerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+#sideImage{
+  
+    height: 100%;
+    background-image: url('../../../assets/images/sorghum.jpg');
+    width:100%;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+@media (max-width: 290px) {
+  #loginForm {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 599px) {
+  #loginRightSide {
+    display: none;
+  }
+
+  #loginScreen {
+    /* width: 100%; */
+    flex-direction: column;
+    padding: 10px;
+  }
+  #loginForm {
+    padding: 50px;
+    /* width: 100%; */
+    
+  }
+}
+
+@media (max-width: 900px) {
+  #loginForm {
+    padding: 20px;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 706px) {
+  #loginForm {
+    padding: 5px;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 659px) {
+  #loginForm {
+    padding: 10px;
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 999px) {
+  #loginForm {
+    padding: 20px;
+    /* width: 100%; */
+  }
+}

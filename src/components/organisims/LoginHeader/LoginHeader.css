@@ -1,0 +1,13 @@
+
+  #loginHeader{
+    color: rgb(124, 124, 124);
+    padding:20px;
+    text-align: center;
+    text-align: center;
+    /* display: none; */
+    font-size: 11px;
+    margin-top: 20px;
+  
+    flex:1;
+  
+  }

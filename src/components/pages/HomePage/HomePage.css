@@ -1,0 +1,24 @@
+#mobileCards{
+    display: none;
+}
+
+#desktopCards{
+display: block;
+
+}
+@media (max-width: 590px) {
+    #desktopCards{
+display: none;
+
+    }
+
+    #mobileCards{
+        display: flex;
+       
+
+    }
+    
+
+    
+
+}
