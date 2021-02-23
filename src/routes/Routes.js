@@ -25,6 +25,10 @@ import GreenGramsSoilFertitlity from "../components/pages/TrainingRoom/GreenGram
 import GreenGramsRoutine from "../components/pages/TrainingRoom/GreenGrams/FactSheets/GreenGramsRoutine/GreenGramsRoutine";
 import GreenGramsProtection from "../components/pages/TrainingRoom/GreenGrams/FactSheets/GreenGramsProtection/GreenGramsProtection";
 import GreenGramsHarvest from "../components/pages/TrainingRoom/GreenGrams/FactSheets/GreenGramsHarvest/GreenGramsHarvest";
+import SorghumChapters from "../components/pages/TrainingRoom/Sorghum/SorghumChapters/SorghumChapters";
+import SorghumIntro from "../components/pages/TrainingRoom/Sorghum/FactSheet/SorghumIntro/SorghumIntro";
+import ValueChains from "../components/pages/ValueChains/ValueChains";
+
 function Routes() {
   const { loginFunc, phone, setPhone,isLoggedIn } = useContext(LoginContext);
   return (
@@ -39,6 +43,8 @@ function Routes() {
         {/* <Route path="/HomePage" component={HomePage}></Route> */}
         <Route path="/ProfilePage" component={!isLoggedIn?Login:ProfilePage}></Route>
         <Route path="/Farm" component={!isLoggedIn?Login:Farm}></Route>
+        <Route path="/ValueChains" component={!isLoggedIn?Login:ValueChains}></Route>
+
         <Route path="/RecordFarm" component={!isLoggedIn?Login:RecordFarmDetails}></Route>
 
         <Route path="/TrainingPage" component={!isLoggedIn?Login:TrainingRoomLanding}></Route>
@@ -52,17 +58,13 @@ function Routes() {
         <Route path="/GreengramsProtection" component={!isLoggedIn?Login:GreenGramsProtection}></Route>
         <Route path="/GreengramsHarvest" component={!isLoggedIn?Login:GreenGramsHarvest}></Route>
 
+        <Route path="/SorghumChapters" component={!isLoggedIn?Login:SorghumChapters}></Route>
+        <Route path="/SorghumIntro" component={!isLoggedIn?Login:SorghumIntro}></Route>
+
+
 
 
   
-
-
-
-
-
-
-
-
 
 
 

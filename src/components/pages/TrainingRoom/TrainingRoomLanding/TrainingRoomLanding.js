@@ -7,9 +7,7 @@ import { Divider, Grid, Typography } from "@material-ui/core";
 import AppListItems from "../../../organisims/AppListItems/AppListItems";
 import Spacer from "../../../organisims/Spacer/Spacer";
 
-
 function TrainingRoomLanding() {
-
   const listMenu = [
     {
       menu: "Green grams",
@@ -17,21 +15,34 @@ function TrainingRoomLanding() {
     },
     {
       menu: "Sorghum",
+      to: "/SorghumChapters",
+    },
+    {
+      menu: "Pigeon Peas",
       to: "#",
     },
-
-  
- 
+    {
+      menu: "Finger Millet",
+      to: "#",
+    },
+    {
+      menu: "Cassava",
+      to: "#",
+    },
   ];
   return (
     <div>
       <AppContainer>
-      <Spacer spacing={2} padding={1}></Spacer>
+        <Spacer spacing={2} padding={1}></Spacer>
         <Typography variant="h5">Training Room</Typography> <Divider></Divider>
-        <AppListItems showIcon={true} image={cropImage}  menus={listMenu}></AppListItems>
+        <AppListItems
+          showIcon={true}
+          image={cropImage}
+          menus={listMenu}
+        ></AppListItems>
       </AppContainer>
     </div>
-  )
+  );
 }
 
 export default TrainingRoomLanding;

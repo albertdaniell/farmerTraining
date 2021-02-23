@@ -10,14 +10,17 @@ import Divider from "@material-ui/core/Divider";
 import "./ProfilePage.css";
 import Spacer from "../../organisims/Spacer/Spacer";
 import ProfileImage from "../../organisims/ProfileImage/ProfileImage";
+import ProfileDetails from "./ProfileDetails";
 function ProfilePage() {
   return (
     <div>
       <AppContainer>
         <Spacer spacing={2} padding={1}></Spacer>
-        <Typography variant="h5">Profile</Typography> <Divider></Divider>
+        <Typography variant="h5">Profile Information</Typography> <Divider></Divider>
         <ProfileImage bg='black' color='white' marginTop={20} height={80} width={80}></ProfileImage>
-        <ProfileForm></ProfileForm>
+        <ProfileDetails></ProfileDetails>
+
+        {/* <ProfileForm></ProfileForm> */}
       </AppContainer>
     </div>
   );

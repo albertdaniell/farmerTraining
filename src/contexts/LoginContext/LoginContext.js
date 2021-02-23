@@ -55,33 +55,51 @@ export const LoginContextProvider = (props) => {
 
   const loginFunc = async (props) => {
     setIsLoading(true);
-   
+   let url1=`https://kalro-farmers.herokuapp.com`;
     setTimeout(() => {
       axios
-        .get(`https://kalro-farmers.herokuapp.com/farmers/${phone}`, {
-          params: body,
+        .get(`http://127.0.0.1:4000/checkfarmers/`, {
+          params:{"Phone No of the farmer":phone}
         })
 
         .then((res) => {
-          console.log("results...", res.data[0].rows[0].NameofFarmer);
-          setUserDetails(res.data[0].rows[0]);
-          saveLocalStorageFn(res.data[0].rows[0]);
-          if (res.data[0].rows[0] === undefined) {
+
+          let resultData=res.data[0].rows
+          
+
+          if(resultData === null){
             console.log("Data isnt available");
             alert("User Cannot be found");
             setIsLoading(false);
-          } else {
-            setUserDetails(res.data[0].rows[0]);
-            
-            
+          }
+
+          else{
+            setUserDetails(resultData);
+            saveLocalStorageFn(resultData);
             setIsLoading(false);
             setisloggedin(true);
             setTitle("Success");
             setShowMesage(true);
-            setMessage("Welcome" + res.data[0].rows[0].NameofFarmer + "");
+            setMessage("Welcome" + resultData["Farmers Name"] + "");
             setseverity("success");
             setCanDissmiss(true);
           }
+          // if (res.data[0].rows[0] === null) {
+          //   console.log("Data isnt available");
+          //   alert("User Cannot be found");
+          //   setIsLoading(false);
+          // } else {
+          //   setUserDetails(res.data[0].rows[0]);
+            
+            
+          //   setIsLoading(false);
+          //   setisloggedin(true);
+          //   setTitle("Success");
+          //   setShowMesage(true);
+          //   setMessage("Welcome" + res.data[0].rows[0].NameofFarmer + "");
+          //   setseverity("success");
+          //   setCanDissmiss(true);
+          // }
         })
         .catch((e) => console.log(e));
     }, 1000);

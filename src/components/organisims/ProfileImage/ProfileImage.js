@@ -24,7 +24,11 @@ function ProfileImage(props) {
   return (
     <div>
       <center>
-  <Avatar className={classes.profileImg}>{userDetails.NameofFarmer[0]}</Avatar>
+        {
+          userDetails.length === 0?null:
+  <Avatar className={classes.profileImg}>{userDetails["Farmers Name"][0]}</Avatar>
+
+        }
       </center>
     </div>
   );
