@@ -3,6 +3,7 @@ import React from "react";
 import Spacer from "../../organisims/Spacer/Spacer";
 import AppContainer from "../../Templates/AppContainer/AppContainer";
 import "./Farm.css";
+import FarmDetails from "./FarmDetails";
 import FarmListMenu from "./FarmListMenu";
 
 function Farm() {
@@ -12,7 +13,7 @@ function Farm() {
         <div>
           <Spacer spacing={2} padding={1}></Spacer>
           <Typography variant="h5">Farm</Typography> <Divider></Divider>
-          <FarmListMenu></FarmListMenu>
+          <FarmDetails></FarmDetails>
         </div>
       </AppContainer>
     </div>

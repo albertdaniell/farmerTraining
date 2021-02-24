@@ -1,7 +1,11 @@
-import { List, ListItem, ListItemText } from "@material-ui/core";
+import { Button, List, ListItem, ListItemText } from "@material-ui/core";
 import React, { useContext } from "react";
 import { LoginContext } from "../../../contexts/LoginContext/LoginContext";
+import Divider from "@material-ui/core/Divider";
+import Spacer from "../../organisims/Spacer/Spacer";
+
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,37 +24,46 @@ function ProfileDetails() {
 
   return (
     <div>
-      <List className={classes.root}>
-        <ListItem alignItems="flex-start">
-          <ListItemText>
-              <strong>Farmer Name</strong>
-          </ListItemText>
-          <ListItemText primary={userDetails["Farmers Name"]} />
-        </ListItem>
+      <List>
+        <Divider></Divider>
 
-        <ListItem alignItems="flex-start">
-          <ListItemText>
-              <strong>Phone Number</strong>
-          </ListItemText>
-          <ListItemText primary={userDetails[`Phone No of the farmer`]} />
-        </ListItem>
+      <Spacer spacing={1} padding={1}></Spacer>
+        <strong>Farmer Name</strong>
+        <ListItemText primary={userDetails["Farmers Name"]} />
 
-        <ListItem alignItems="flex-start">
-          <ListItemText>
-              <strong>Education</strong>
-          </ListItemText>
-          <ListItemText primary={userDetails["Education level"]} />
-        </ListItem>
+        <Spacer spacing={1} padding={1}></Spacer>
+        <Divider></Divider>
+        <Spacer spacing={1} padding={1}></Spacer>
+        <strong>Phone Number</strong>
 
-        <ListItem alignItems="flex-start">
-          <ListItemText>
-              <strong>Age</strong>
-          </ListItemText>
-          <ListItemText primary={userDetails["Age"]} />
-        </ListItem>
+        <ListItemText primary={userDetails[`Phone No of the farmer`]} />
+        <Spacer spacing={1} padding={1}></Spacer>
+        <Divider></Divider>
+
+        <Spacer spacing={1} padding={1}></Spacer>
+        <strong>Age</strong>
+        <ListItemText primary={userDetails["Age"]} />
+        <Spacer spacing={1} padding={1}></Spacer>
+         <Divider></Divider>
+         <Spacer spacing={1} padding={1}></Spacer>
+
+         <center>
+         <Link to="/Farm">
+         <Button
+          disableElevation
+          id=""
+          size="small"
+          
+          variant="contained"
+          color="primary"
+        >
+          View Farm Details
+        </Button>
+         </Link>
+         </center>
+
+       
       </List>
-
-    
     </div>
   );
 }

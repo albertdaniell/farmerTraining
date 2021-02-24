@@ -22,7 +22,8 @@ export const LoginContextProvider = (props) => {
     setCanDissmiss,
   } = useContext(AppMessages);
   const { setIsLoading, isLoading } = useContext(IsLoadingContext);
-  const [phone, setPhone] = useState("726488286");
+  const [phone, setPhone] = useState("");
+  
   const [userDetails, setUserDetails] = useState("");
   const [password, setPassword] = useState();
   const [isLoggedIn, setisloggedin] = useState(false);
@@ -54,11 +55,22 @@ export const LoginContextProvider = (props) => {
   };
 
   const loginFunc = async (props) => {
+    if(phone === ""){
+      alert("Phone should not be empty!")
+      return 0;
+    }
+
+    if(password !=="12345"){
+      alert("Phone and Password is incorrect!")
+      return 0;
+    }
     setIsLoading(true);
-   let url1=`https://kalro-farmers.herokuapp.com`;
+   let url1=`https://kalro-farmers.herokuapp.com/`;
+   let url2=`http://127.0.0.1:4000/`;
+
     setTimeout(() => {
       axios
-        .get(`http://127.0.0.1:4000/checkfarmers/`, {
+        .get(`${url1}checkfarmers/`, {
           params:{"Phone No of the farmer":phone}
         })
 
@@ -80,7 +92,7 @@ export const LoginContextProvider = (props) => {
             setisloggedin(true);
             setTitle("Success");
             setShowMesage(true);
-            setMessage("Welcome" + resultData["Farmers Name"] + "");
+            setMessage("Welcome " + resultData["Farmers Name"] + "");
             setseverity("success");
             setCanDissmiss(true);
           }
@@ -126,6 +138,7 @@ export const LoginContextProvider = (props) => {
           userDetails,
           logOut,
           isLoadingOffline,
+          setPassword
         }}
       >
         {props.children}

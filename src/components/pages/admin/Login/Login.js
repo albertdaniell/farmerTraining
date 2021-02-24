@@ -9,8 +9,9 @@ import SwipableWrap from "../../../Templates/Swipables/SwipableWrap";
 import { Link, Redirect } from "react-router-dom";
 import AppLoginLogo from "../../../organisims/AppLoginLogo/AppLoginLogo";
 import { LoginContext } from "../../../../contexts/LoginContext/LoginContext";
+import { SettingsApplicationsSharp } from "@material-ui/icons";
 function Login() {
-  const { loginFunc, phone, setPhone,isLoggedIn,isLoadingOffline } = useContext(LoginContext);
+  const { loginFunc, phone, setPhone,isLoggedIn,isLoadingOffline,setPassword } = useContext(LoginContext);
 
   const { isDoneIntro, setIsDoneIntro} = useContext(IntroContext);
   
@@ -40,23 +41,24 @@ function Login() {
                 label="Phone number, start with i.e 791827382"
               />
             </Grid>
-            {/* <Grid id="textFieldGrid">
+            <Grid id="textFieldGrid">
               <TextField
+              onChange={(e)=>setPassword(e.target.value)}
               variant="outlined"
                 type="password"
                 fullWidth
                 id="textField"
                 label="Password"
               />
-            </Grid> */}
+            </Grid>
             <br></br>
 
             <div id="loginButtonContainer">
-              <div id="forgotPassDiv">
+              {/* <div id="forgotPassDiv">
                 <Link id="" to="/forgotPassword">
                   Forgot Password
                 </Link>
-              </div>
+              </div> */}
 
               <Button
                 id="loginButton"
@@ -70,19 +72,19 @@ function Login() {
               </Button>
             </div>
           </form>
-          <div id="centerDiv">
+          {/* <div id="centerDiv">
             <div id="horizontal"></div>
             <span>or</span>
             <div id="horizontal"></div>
           </div>
-          <br></br>
-          <center>
+          <br></br> */}
+          {/* <center>
             <Link id="registerAccount" to="/register">
               Register for an account
-            </Link>
+            </Link> 
             <br></br> <br></br>
-            {/* <Link  id="" to="/HomePage">Go to Home Direct</Link> */}
-          </center>
+             <Link  id="" to="/HomePage">Go to Home Direct</Link>
+          </center> */}
         </div>
       </LoginContainer>
       :null}
