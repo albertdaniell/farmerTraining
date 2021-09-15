@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8636fd5a.chunk.css",
+    "main.js": "/static/js/main.e4da3038.chunk.js",
+    "main.js.map": "/static/js/main.e4da3038.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.37d012ff.js",
+    "runtime-main.js.map": "/static/js/runtime-main.37d012ff.js.map",
+    "static/js/2.a51c06da.chunk.js": "/static/js/2.a51c06da.chunk.js",
+    "static/js/2.a51c06da.chunk.js.map": "/static/js/2.a51c06da.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6a7760cdc4c149740fcfd153b56c3c66.js": "/precache-manifest.6a7760cdc4c149740fcfd153b56c3c66.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8636fd5a.chunk.css.map": "/static/css/main.8636fd5a.chunk.css.map",
+    "static/js/2.a51c06da.chunk.js.LICENSE.txt": "/static/js/2.a51c06da.chunk.js.LICENSE.txt",
+    "static/media/cow.jpg": "/static/media/cow.90590ad7.jpg",
+    "static/media/greengrams.jpg": "/static/media/greengrams.b419c6a9.jpg",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/sorghum-image.jpg": "/static/media/sorghum-image.60a2d383.jpg",
+    "static/media/LoginContainer.css": "/static/media/sorghum.d8c12d1e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37d012ff.js",
+    "static/js/2.a51c06da.chunk.js",
+    "static/css/main.8636fd5a.chunk.css",
+    "static/js/main.e4da3038.chunk.js"
+  ]
+}
