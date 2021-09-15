@@ -19,7 +19,7 @@ function AppContainer(props) {
       <Spacer spacing={4} padding={1}></Spacer>
       <Container id="appContainerDiv" style={{}} maxWidth="md">
         <Grid container spacing={1}>
-          <Grid item md={8} sm={8} xs={12}>
+          <Grid item md={12} sm={12} xs={12}>
             <div className="alert animate__animated animate__pulse">
 
               {
@@ -34,9 +34,7 @@ function AppContainer(props) {
 
             <div className="col animate__animated animate__fadeIn">{children}  <Spacer spacing={2} padding={1}></Spacer></div>
           </Grid>
-          <Grid id="rightSideAppContainer" item md={4} sm={4} xs={12}>
-            ...
-          </Grid>
+         
         </Grid>
       </Container>
     </div>

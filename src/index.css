@@ -38,3 +38,27 @@ strong{
   padding-bottom: 20px;
   
 }
+
+#card{
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+
+}
+
+
+#card .card-body{
+  padding: 20px;
+  background-color: rgb(242, 242, 242) !important;
+
+}
+#card img{
+  height: auto;
+  width: 100%;
+}
+
+#introDiv{
+  color: #000;
+  text-decoration: none !important;
+}

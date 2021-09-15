@@ -26,7 +26,7 @@ function ProfileImage(props) {
       <center>
         {
           userDetails.length === 0?null:
-  <Avatar className={classes.profileImg}>{userDetails["Farmers Name"][0]}</Avatar>
+  <Avatar className={classes.profileImg}>{userDetails.NameofFarmer[0]}</Avatar>
 
         }
       </center>

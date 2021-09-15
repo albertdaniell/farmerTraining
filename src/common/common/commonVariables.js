@@ -59,4 +59,15 @@ const valueChains = [
   "Yams",
 ];
 
-export default { valueChains };
+
+const APP_URL="http://0.0.0.0:8000/api/"
+const SERVER_URL="http://0.0.0.0:8000"
+
+
+const SINGIN_URL=`${APP_URL}webuser/login/`
+let LOGIN_SUCCESS='Login Success'
+let CONTENT_URL=`${APP_URL}englishcontent/`
+let VC_URL=`${APP_URL}valuechain/`
+
+
+export { valueChains,SINGIN_URL ,LOGIN_SUCCESS,CONTENT_URL,VC_URL,SERVER_URL};

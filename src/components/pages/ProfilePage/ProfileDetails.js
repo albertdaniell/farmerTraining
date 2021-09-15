@@ -29,20 +29,20 @@ function ProfileDetails() {
 
       <Spacer spacing={1} padding={1}></Spacer>
         <strong>Farmer Name</strong>
-        <ListItemText primary={userDetails["Farmers Name"]} />
+        <ListItemText primary={userDetails.NameofFarmer} />
 
         <Spacer spacing={1} padding={1}></Spacer>
         <Divider></Divider>
         <Spacer spacing={1} padding={1}></Spacer>
         <strong>Phone Number</strong>
 
-        <ListItemText primary={userDetails[`Phone No of the farmer`]} />
+        <ListItemText primary={userDetails[`Phone`]} />
         <Spacer spacing={1} padding={1}></Spacer>
         <Divider></Divider>
 
         <Spacer spacing={1} padding={1}></Spacer>
         <strong>Age</strong>
-        <ListItemText primary={userDetails["Age"]} />
+        <ListItemText primary={userDetails["Agebracket"]} />
         <Spacer spacing={1} padding={1}></Spacer>
          <Divider></Divider>
          <Spacer spacing={1} padding={1}></Spacer>

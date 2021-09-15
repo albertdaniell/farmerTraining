@@ -17,7 +17,7 @@ function Login() {
     setPhone,
     isLoggedIn,
     isLoadingOffline,
-    setPassword,
+    setPassword,SetLoginPhone,SetLoginPassword,loginPhone,loginPassword
   } = useContext(LoginContext);
 
   const { isDoneIntro, setIsDoneIntro } = useContext(IntroContext);
@@ -37,8 +37,8 @@ function Login() {
             <form>
               <Grid id="textFieldGrid">
                 <TextField
-                  onChange={(e) => setPhone(e.target.value)}
-                  value={phone}
+                  onChange={(e) => SetLoginPhone(e.target.value)}
+                  value={loginPhone}
                   variant="outlined"
                   type="number"
                   fullWidth
@@ -48,8 +48,10 @@ function Login() {
               </Grid>
               <Grid id="textFieldGrid">
                 <TextField
-                  onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) => SetLoginPassword(e.target.value)}
                   variant="outlined"
+                  value={loginPassword}
+
                   type="password"
                   fullWidth
                   id="textField"

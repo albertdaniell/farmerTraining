@@ -28,6 +28,8 @@ import GreenGramsHarvest from "../components/pages/TrainingRoom/GreenGrams/FactS
 import SorghumChapters from "../components/pages/TrainingRoom/Sorghum/SorghumChapters/SorghumChapters";
 import SorghumIntro from "../components/pages/TrainingRoom/Sorghum/FactSheet/SorghumIntro/SorghumIntro";
 import ValueChains from "../components/pages/ValueChains/ValueChains";
+import ValueChain from "../components/pages/ValueChain/ValueChain";
+import ViewContent from "../components/pages/ViewContent/ViewContent";
 
 function Routes() {
   const { loginFunc, phone, setPhone,isLoggedIn } = useContext(LoginContext);
@@ -39,6 +41,10 @@ function Routes() {
        
         <Route exact path="/" component={isLoggedIn?HomePage:Login}></Route>
         <Route path="/register" component={Register}></Route>
+        <Route path="/valuechain" component={ValueChain}></Route>
+        <Route path="/viewcontent" component={ViewContent}></Route>
+
+
         <Route path="/forgotPassword" component={ForgotPass}></Route>
         {/* <Route path="/HomePage" component={HomePage}></Route> */}
         <Route path="/ProfilePage" component={!isLoggedIn?Login:ProfilePage}></Route>
@@ -47,7 +53,7 @@ function Routes() {
 
         <Route path="/RecordFarm" component={!isLoggedIn?Login:RecordFarmDetails}></Route>
 
-        <Route path="/TrainingPage" component={!isLoggedIn?Login:TrainingRoomLanding}></Route>
+        <Route path="/TrainingPage" component={!isLoggedIn?Login:ValueChain}></Route>
         <Route path="/GreengramsChapters" component={!isLoggedIn?Login:GreenGramsChapters}></Route>
         <Route path="/GreengramsIntro" component={!isLoggedIn?Login:GreenGramsIntroduction}></Route>
         <Route path="/GreengramsVariety" component={!isLoggedIn?Login:GreenGramsVariety}></Route>

@@ -28,14 +28,14 @@ function FarmDetails() {
       
       <Spacer spacing={1} padding={1}></Spacer>
         <strong>Land Ownership</strong>
-        <ListItemText primary={userDetails["Land ownerships"]} />
+        <ListItemText primary={userDetails["Farmerownership"]} />
 
         <Spacer spacing={1} padding={1}></Spacer>
 
         <Divider></Divider>
         <Spacer spacing={1} padding={1}></Spacer>
         <strong>Total Farm Size</strong>
-        <ListItemText primary={userDetails[`Total farm size`]} />
+        <ListItemText primary={userDetails[`Totalfarmsize`]} />
         <Spacer spacing={1} padding={1}></Spacer>
         <Divider></Divider>
 
@@ -50,7 +50,7 @@ function FarmDetails() {
         <Divider></Divider>
         <Spacer spacing={1} padding={1}></Spacer>
         <strong>Sub County</strong>
-        <ListItemText primary={userDetails[`Sub county`]} />
+        <ListItemText primary={userDetails[`Subcounty`]} />
         <Spacer spacing={1} padding={1}></Spacer>
         <Divider></Divider>
 
@@ -68,14 +68,14 @@ function FarmDetails() {
         <Spacer spacing={1} padding={1}></Spacer>
         <strong>Latitude</strong>
 
-        <ListItemText primary={userDetails[`Latitude`]} />
+        <ListItemText primary={userDetails[`farm_latitude`]} />
         <Spacer spacing={1} padding={1}></Spacer>
         <Divider></Divider>
         
 
         <Spacer spacing={1} padding={1}></Spacer>
         <strong>Longitude</strong>
-        <ListItemText primary={userDetails["Longitude"]} />
+        <ListItemText primary={userDetails["farm_longitude"]} />
         <Spacer spacing={1} padding={1}></Spacer>
          <Divider></Divider>
          <Spacer spacing={1} padding={1}></Spacer>
