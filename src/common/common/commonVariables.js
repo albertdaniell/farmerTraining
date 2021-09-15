@@ -60,7 +60,7 @@ const valueChains = [
 ];
 
 
-const APP_URL="http://137.184.39/api/"
+const APP_URL="/api/"
 // const APP_URL="http://0.0.0.0:8000/api/"
 
 // const SERVER_URL="http://0.0.0.0:8000"
