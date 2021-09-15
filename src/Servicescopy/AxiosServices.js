@@ -11,7 +11,7 @@ const AxiosGetService = (url) => {
   
   // console.log(tok.data.token)
   let headers = {
-
+    "Content-Type": "application/json",
     'Access-Control-Allow-Origin': '*'
   };
 

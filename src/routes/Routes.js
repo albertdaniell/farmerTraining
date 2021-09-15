@@ -39,7 +39,7 @@ function Routes() {
 
         
        
-        <Route exact path="/" component={isLoggedIn?HomePage:Login}></Route>
+        <Route exact path="/" component={!isLoggedIn?HomePage:Login}></Route>
         <Route path="/register" component={Register}></Route>
         <Route path="/valuechain" component={ValueChain}></Route>
         <Route path="/viewcontent" component={ViewContent}></Route>
@@ -47,13 +47,13 @@ function Routes() {
 
         <Route path="/forgotPassword" component={ForgotPass}></Route>
         {/* <Route path="/HomePage" component={HomePage}></Route> */}
-        <Route path="/ProfilePage" component={!isLoggedIn?Login:ProfilePage}></Route>
-        <Route path="/Farm" component={!isLoggedIn?Login:Farm}></Route>
-        <Route path="/ValueChains" component={!isLoggedIn?Login:ValueChains}></Route>
+        <Route path="/ProfilePage" component={isLoggedIn?Login:ProfilePage}></Route>
+        <Route path="/Farm" component={isLoggedIn?Login:Farm}></Route>
+        <Route path="/ValueChains" component={isLoggedIn?Login:ValueChains}></Route>
 
-        <Route path="/RecordFarm" component={!isLoggedIn?Login:RecordFarmDetails}></Route>
+        <Route path="/RecordFarm" component={isLoggedIn?Login:RecordFarmDetails}></Route>
 
-        <Route path="/TrainingPage" component={!isLoggedIn?Login:ValueChain}></Route>
+        <Route path="/TrainingPage" component={isLoggedIn?Login:ValueChain}></Route>
         <Route path="/GreengramsChapters" component={!isLoggedIn?Login:GreenGramsChapters}></Route>
         <Route path="/GreengramsIntro" component={!isLoggedIn?Login:GreenGramsIntroduction}></Route>
         <Route path="/GreengramsVariety" component={!isLoggedIn?Login:GreenGramsVariety}></Route>
