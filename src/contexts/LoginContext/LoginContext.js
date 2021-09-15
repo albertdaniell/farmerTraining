@@ -5,7 +5,12 @@ import { Link, Redirect } from "react-router-dom";
 import { AppMessages } from "../AppMessages/AppMessages";
 import { IsLoadingContext } from "../IsLoading/IsLoading";
 import { saveLocalStorageFn } from "../../services/saveLocalStorage";
-import { CONTENT_URL, LOGIN_SUCCESS, SINGIN_URL, VC_URL } from "../../common/common/commonVariables";
+import {
+  CONTENT_URL,
+  LOGIN_SUCCESS,
+  SINGIN_URL,
+  VC_URL,
+} from "../../common/common/commonVariables";
 import {
   AxiosGetService,
   AxiosPostService,
@@ -34,78 +39,78 @@ export const LoginContextProvider = (props) => {
   const [loginPassword, SetLoginPassword] = useState("1234567");
 
   const [userDetails, setUserDetails] = useState({
-    "id": 618,
-    "NameofFarmer": "Julia Simiyu",
-    "Agebracket": "46-65 yrs",
-    "FarmerMobileNumber": null,
-    "education": null,
-    "Totalfarmsize": "0.5",
-    "Farmerownership": "Inheritance",
-    "Gender": "F",
-    "Phone": "254711301287",
-    "GPSfarm": null,
-    "farm_latitude": "0.4758468",
-    "farm_longitude": "34.19916",
-    "County": "Busia",
-    "Subcounty": "Teso South",
-    "Ward": "Chakol South",
-    "Apiculture": "0",
-    "Aquaculture": "0",
-    "Avocado": "0",
-    "Banana": "0",
-    "Beans": "1",
-    "BeefCattle": "0",
-    "Butternuts": "0",
-    "Cabbages": "0",
-    "CashewNuts": "0",
-    "Cassava": "1",
-    "Coconut": "0",
-    "Coffee": "0",
-    "ComercialPeas": "0",
-    "Cotton": "0",
-    "Cowpea": "0",
-    "DairyGoat": "0",
-    "Dolichos": "0",
-    "Donkey": "0",
-    "FarmYardManure": "0",
-    "Fodder": "0",
-    "Goats": "0",
-    "GreenGrams": "0",
-    "Herbs": "0",
-    "IndigineousVegetables": "0",
-    "IrishPotatoes": "0",
-    "Kale": "0",
-    "Macadamia": "0",
-    "Maize": "1",
-    "Mangoes": "0",
-    "Millet": "0",
-    "Miraa": "0",
-    "Mushroom": "0",
-    "Onion": "0",
-    "Oranges": "0",
-    "Pearlmillet": "0",
-    "PigeonPea": "0",
-    "Pigs": "0",
-    "Rabbitrearing": "0",
-    "Rice": "0",
-    "Seaweed": "0",
-    "Sericulture": "0",
-    "Sheep": "0",
-    "Sorghum": "0",
-    "Soyabean": "0",
-    "Sugarcane": "0",
-    "SweetPotatoes": "0",
-    "Tea": "0",
-    "Tobacco": "0",
-    "Tomatoes": "0",
-    "Trees": "0",
-    "Watermelon": "0",
-    "Woodlot": "0",
-    "Yams": "0",
-    "password": "1234567",
-    "date_added": "2021-09-15T03:57:41.996161Z",
-    "date_updated": "2021-09-15T03:57:41.996195Z"
-});
+    id: 618,
+    NameofFarmer: "Julia Simiyu",
+    Agebracket: "46-65 yrs",
+    FarmerMobileNumber: null,
+    education: null,
+    Totalfarmsize: "0.5",
+    Farmerownership: "Inheritance",
+    Gender: "F",
+    Phone: "254711301287",
+    GPSfarm: null,
+    farm_latitude: "0.4758468",
+    farm_longitude: "34.19916",
+    County: "Busia",
+    Subcounty: "Teso South",
+    Ward: "Chakol South",
+    Apiculture: "0",
+    Aquaculture: "0",
+    Avocado: "0",
+    Banana: "0",
+    Beans: "1",
+    BeefCattle: "0",
+    Butternuts: "0",
+    Cabbages: "0",
+    CashewNuts: "0",
+    Cassava: "1",
+    Coconut: "0",
+    Coffee: "0",
+    ComercialPeas: "0",
+    Cotton: "0",
+    Cowpea: "0",
+    DairyGoat: "0",
+    Dolichos: "0",
+    Donkey: "0",
+    FarmYardManure: "0",
+    Fodder: "0",
+    Goats: "0",
+    GreenGrams: "0",
+    Herbs: "0",
+    IndigineousVegetables: "0",
+    IrishPotatoes: "0",
+    Kale: "0",
+    Macadamia: "0",
+    Maize: "1",
+    Mangoes: "0",
+    Millet: "0",
+    Miraa: "0",
+    Mushroom: "0",
+    Onion: "0",
+    Oranges: "0",
+    Pearlmillet: "0",
+    PigeonPea: "0",
+    Pigs: "0",
+    Rabbitrearing: "0",
+    Rice: "0",
+    Seaweed: "0",
+    Sericulture: "0",
+    Sheep: "0",
+    Sorghum: "0",
+    Soyabean: "0",
+    Sugarcane: "0",
+    SweetPotatoes: "0",
+    Tea: "0",
+    Tobacco: "0",
+    Tomatoes: "0",
+    Trees: "0",
+    Watermelon: "0",
+    Woodlot: "0",
+    Yams: "0",
+    password: "1234567",
+    date_added: "2021-09-15T03:57:41.996161Z",
+    date_updated: "2021-09-15T03:57:41.996195Z",
+  });
   const [password, setPassword] = useState();
   const [isLoggedIn, setisloggedin] = useState(true);
   const [isLoadingOffline, setIsLoadingOffline] = useState(true);
@@ -114,7 +119,6 @@ export const LoginContextProvider = (props) => {
   const [valueChainDetail, setValueChainDetail] = useState([]);
   const [vcisLoading, setvcIsLoading] = useState(null);
   const [contentsFromVC, setContentsFromVC] = useState([]);
-
 
   const [isLoadingContent, setIsLoadingContent] = useState(null);
 
@@ -255,7 +259,7 @@ export const LoginContextProvider = (props) => {
         const getResData = await getRes;
         setvcIsLoading(true);
 
-          console.log(getResData);
+        console.log(getResData);
         setValueChains(getResData.data);
         setvcIsLoading(false);
       } catch (e) {
@@ -298,7 +302,8 @@ export const LoginContextProvider = (props) => {
           valueChainDetail,
           vcisLoading,
           isLoadingContent,
-          contentsFromVC,getContentFromVC
+          contentsFromVC,
+          getContentFromVC,
         }}
       >
         {props.children}

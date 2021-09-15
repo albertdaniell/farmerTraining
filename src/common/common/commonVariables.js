@@ -60,11 +60,11 @@ const valueChains = [
 ];
 
 
-const APP_URL="/api/"
+const APP_URL="http://147.182.142.239:9100/api/"
 // const APP_URL="http://0.0.0.0:8000/api/"
 
 // const SERVER_URL="http://0.0.0.0:8000"
-const SERVER_URL="http://137.184.22.30:39"
+const SERVER_URL="http://147.182.142.239:9100"
 
 
 const SINGIN_URL=`${APP_URL}webuser/login/`
