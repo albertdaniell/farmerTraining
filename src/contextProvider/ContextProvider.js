@@ -1,6 +1,5 @@
 import React from "react";
 import { AppMessagestProvider } from "../contexts/AppMessages/AppMessages";
-import { FirebaseCloudMessagingProv } from "../contexts/FirebaseCloudMessaging/FirebaseCloudMessaging";
 import { GeocoodinatesContextProvider } from "../contexts/Geocoodinates/Geocoodinates";
 import { HandleLeftDrawerProvider } from "../contexts/HandleLeftDrawer/HandleLeftDrawer";
 import { HandleProfileMenuProvider } from "../contexts/HandleProfileMenu/HandleProfileMenu";
@@ -13,7 +12,7 @@ import { LoginContextProvider } from "../contexts/LoginContext/LoginContext";
 
 function ContextProvider(props) {
   return (
-    <FirebaseCloudMessagingProv>
+
       <AppMessagestProvider>
         <IsLoadingContextProvider>
           <LoginContextProvider>
@@ -27,7 +26,7 @@ function ContextProvider(props) {
           </LoginContextProvider>
         </IsLoadingContextProvider>
       </AppMessagestProvider>
-    </FirebaseCloudMessagingProv>
+ 
   );
 }
 
