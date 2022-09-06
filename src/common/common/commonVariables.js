@@ -60,7 +60,7 @@ const valueChains = [
 ];
 // http://137.184.22.30:38/api/valuechain/
 
-const APP_URL="http://127.0.0.1:38/api/"
+const APP_URL="/api/"
 // const APP_URL="http://0.0.0.0:8000/api/"
 
 // const SERVER_URL="http://0.0.0.0:8000"
